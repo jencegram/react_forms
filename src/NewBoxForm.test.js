@@ -1,14 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Box from './Box';
+import NewBoxForm from './NewBoxForm';
 
 // Smoke Test
 it('renders without crashing', () => {
-  render(<Box id="1" width="100" height="100" color="red" removeBox={() => {}} />);
+  render(<NewBoxForm addBox={() => {}} />);
 });
 
 // Snapshot Test
 it('matches snapshot', () => {
-  const { asFragment } = render(<Box id="1" width="100" height="100" color="red" removeBox={() => {}} />);
+  const { asFragment } = render(<NewBoxForm addBox={() => {}} />);
   expect(asFragment()).toMatchSnapshot();
 });

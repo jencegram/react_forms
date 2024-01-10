@@ -1,0 +1,8 @@
+.NewBoxForm {
+  margin: 20px;
+}
+
+.NewBoxForm input,
+.NewBoxForm button {
+  margin: 5px;
+}
